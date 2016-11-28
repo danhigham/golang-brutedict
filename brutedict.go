@@ -25,7 +25,7 @@ func New(isnum, islow, iscap bool, start, end int) (bd *BruteDict) {
 
 	strnum := []byte("0123456789")
 	strlow := []byte("abcdefghijklmnopqrstuvwxyz")
-	strcap := []byte("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+	strcap := []byte("ABCDEFGHIJKLMNOPQRSTUVWXYZ_-")
 	var str = make([]byte, 0)
 	if isnum {
 		str = append(str, strnum...)
